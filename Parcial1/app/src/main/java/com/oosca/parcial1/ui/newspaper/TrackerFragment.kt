@@ -1,4 +1,4 @@
-package com.oosca.parcial1.ui
+package com.oosca.parcial1.ui.newspaper
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment

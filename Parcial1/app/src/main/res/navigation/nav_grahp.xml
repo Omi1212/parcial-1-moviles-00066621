@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/trackerFragment"
-        android:name="com.oosca.parcial1.ui.TrackerFragment"
+        android:name="com.oosca.parcial1.ui.newspaper.TrackerFragment"
         android:label="fragment_tracker"
         tools:layout="@layout/fragment_tracker" >
         <action
@@ -19,7 +19,7 @@
     </fragment>
     <fragment
         android:id="@+id/newspaperFragment"
-        android:name="com.oosca.parcial1.ui.NewspaperFragment"
+        android:name="com.oosca.parcial1.ui.newspaper.NewspaperFragment"
         android:label="fragment_newspaper"
         tools:layout="@layout/fragment_newspaper" >
         <action
@@ -28,7 +28,7 @@
     </fragment>
     <fragment
         android:id="@+id/newNewspaperFragment"
-        android:name="com.oosca.parcial1.ui.NewNewspaperFragment"
+        android:name="com.oosca.parcial1.ui.newspaper.NewNewspaperFragment"
         android:label="fragment_new_newspaper"
         tools:layout="@layout/fragment_new_newspaper" >
         <action
