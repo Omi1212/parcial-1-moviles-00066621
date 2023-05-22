@@ -7,6 +7,10 @@ android {
     namespace 'com.oosca.parcial1'
     compileSdk 33
 
+    dataBinding{
+        enabled true
+    }
+
     defaultConfig {
         applicationId "com.oosca.parcial1"
         minSdk 24

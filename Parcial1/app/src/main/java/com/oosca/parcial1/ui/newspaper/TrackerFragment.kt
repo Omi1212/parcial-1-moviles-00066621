@@ -9,18 +9,21 @@ import androidx.cardview.widget.CardView
 import androidx.navigation.findNavController
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.oosca.parcial1.R
+import com.oosca.parcial1.databinding.FragmentTrackerBinding
 
 class TrackerFragment : Fragment() {
 
     private lateinit var actionToNewspaper: CardView
     private lateinit var actionToNewNewspaper: FloatingActionButton
 
+    lateinit var binding: FragmentTrackerBinding
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_tracker, container, false)
+        binding = FragmentTrackerBinding.inflate(inflater,container,false)
+        return binding.root
     }
 
 
@@ -32,11 +35,11 @@ class TrackerFragment : Fragment() {
 
 
         actionToNewspaper.setOnClickListener {
-            it.findNavController().navigate(R.id.newspaperFragment)
+            it.findNavController().navigate(R.id.action_trackerFragment_to_newspaperFragment)
         }
 
         actionToNewNewspaper.setOnClickListener {
-            it.findNavController().navigate(R.id.newNewspaperFragment)
+            it.findNavController().navigate(R.id.action_trackerFragment_to_newNewspaperFragment)
         }
     }
 }
