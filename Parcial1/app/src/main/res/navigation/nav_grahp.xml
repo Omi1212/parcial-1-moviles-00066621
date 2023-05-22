@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_grahp"
+    app:startDestination="@id/trackerFragment">
+
+    <fragment
+        android:id="@+id/trackerFragment"
+        android:name="com.oosca.parcial1.TrackerFragment"
+        android:label="fragment_tracker"
+        tools:layout="@layout/fragment_tracker" >
+        <action
+            android:id="@+id/action_trackerFragment_to_newspaperFragment"
+            app:destination="@id/newspaperFragment" />
+        <action
+            android:id="@+id/action_trackerFragment_to_newNewspaperFragment"
+            app:destination="@id/newNewspaperFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/newspaperFragment"
+        android:name="com.oosca.parcial1.NewspaperFragment"
+        android:label="fragment_newspaper"
+        tools:layout="@layout/fragment_newspaper" >
+        <action
+            android:id="@+id/action_newspaperFragment_to_trackerFragment"
+            app:destination="@id/trackerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/newNewspaperFragment"
+        android:name="com.oosca.parcial1.NewNewspaperFragment"
+        android:label="fragment_new_newspaper"
+        tools:layout="@layout/fragment_new_newspaper" >
+        <action
+            android:id="@+id/action_newNewspaperFragment_to_trackerFragment"
+            app:destination="@id/trackerFragment" />
+    </fragment>
+</navigation>
