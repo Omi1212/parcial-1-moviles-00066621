@@ -6,7 +6,7 @@
     <data>
         <variable
             name="viewmodel"
-            type="com.oosca.parcial1.ui.newspaper.NewspaperViewModel" />
+            type="com.oosca.parcial1.ui.newspaper.viewmodel.NewspaperViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout

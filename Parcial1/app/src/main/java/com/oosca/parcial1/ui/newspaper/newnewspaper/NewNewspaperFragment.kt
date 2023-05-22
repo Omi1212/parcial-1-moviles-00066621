@@ -1,4 +1,4 @@
-package com.oosca.parcial1.ui.newspaper
+package com.oosca.parcial1.ui.newspaper.newnewspaper
 
 import android.os.Bundle
 import android.util.Log
@@ -8,8 +8,8 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.findNavController
-import com.oosca.parcial1.R
 import com.oosca.parcial1.databinding.FragmentNewNewspaperBinding
+import com.oosca.parcial1.ui.newspaper.viewmodel.NewspaperViewModel
 
 class NewNewspaperFragment : Fragment() {
 

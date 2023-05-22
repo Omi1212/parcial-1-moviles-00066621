@@ -6,13 +6,13 @@
     <data>
         <variable
             name="viewmodel"
-            type="com.oosca.parcial1.ui.newspaper.NewspaperViewModel" />
+            type="com.oosca.parcial1.ui.newspaper.viewmodel.NewspaperViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".ui.newspaper.NewNewspaperFragment"
+        tools:context=".ui.newspaper.newnewspaper.NewNewspaperFragment"
         android:background="@color/backgroundLayout">
 
 

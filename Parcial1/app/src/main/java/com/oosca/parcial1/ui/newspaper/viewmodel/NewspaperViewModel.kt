@@ -1,8 +1,7 @@
-package com.oosca.parcial1.ui.newspaper
+package com.oosca.parcial1.ui.newspaper.viewmodel
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.ViewModelProvider.AndroidViewModelFactory.Companion.APPLICATION_KEY
 import androidx.lifecycle.viewmodel.initializer
 import androidx.lifecycle.viewmodel.viewModelFactory
@@ -29,6 +28,12 @@ class NewspaperViewModel(private val repository: NewspaperRepository) : ViewMode
         return true
     }
 
+
+    fun setSelectedNewspaper(newspaper: NewspaperModel){
+        name.value = newspaper.name
+        publicationDate.value = newspaper.publicationDate
+
+    }
     fun createNewspaper(){
         if (!validateData()){
             status.value = WRONG_INFORMATION

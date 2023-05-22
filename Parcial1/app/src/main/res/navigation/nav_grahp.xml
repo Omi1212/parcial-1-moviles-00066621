@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/trackerFragment"
-        android:name="com.oosca.parcial1.ui.newspaper.TrackerFragment"
+        android:name="com.oosca.parcial1.ui.newspaper.tracker.TrackerFragment"
         android:label="fragment_tracker"
         tools:layout="@layout/fragment_tracker" >
         <action
@@ -28,7 +28,7 @@
     </fragment>
     <fragment
         android:id="@+id/newNewspaperFragment"
-        android:name="com.oosca.parcial1.ui.newspaper.NewNewspaperFragment"
+        android:name="com.oosca.parcial1.ui.newspaper.newnewspaper.NewNewspaperFragment"
         android:label="fragment_new_newspaper"
         tools:layout="@layout/fragment_new_newspaper" >
         <action

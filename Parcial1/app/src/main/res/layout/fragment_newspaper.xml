@@ -4,7 +4,7 @@
     <data>
         <variable
             name="viewmodel"
-            type="com.oosca.parcial1.ui.newspaper.NewspaperViewModel" />
+            type="com.oosca.parcial1.ui.newspaper.viewmodel.NewspaperViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -32,7 +32,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="48dp"
             android:layout_marginTop="32dp"
-            android:text="TextView"
+            android:text="@{viewmodel.name}"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
@@ -42,7 +42,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="48dp"
             android:layout_marginTop="32dp"
-            android:text="TextView"
+            android:text="@{viewmodel.publicationDate}"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView5" />
     </androidx.constraintlayout.widget.ConstraintLayout>
